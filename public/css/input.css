@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ul li:not(:first-child) a {
+    @apply text-sm mx-[30px] px-[17px] py-[10px];
+  }
+
+  #principal {
+    @apply grid grid-cols-2 h-[calc(100vh-80px)] mx-tema;
+  }
+
+  #top-button {
+    @apply fixed bottom-[60px] right-[60px] z-50 border-none outline-none bg-red cursor-pointer p-[15px] w-[50px] h-[50px] rounded-[100px];
+  }
+
+  article {
+    @apply w-full h-[140px] rounded-xs flex border-[2.5px] border-solid border-gray-light items-center justify-between mb-[25px];
+  }
+
+  .new-job {
+    @apply bg-green-100 border-green-900 border-opacity-60 relative;
+  }
+
+  .new-badge {
+    @apply absolute top-[-18px] right-[20px] text-white py-[6px] px-[25px] bg-green-500 rounded-xs;
+  }
+
+  .input-outlined {
+    @apply block px-2.5 pb-2.5 pt-4 w-full text-sm text-dark bg-transparent rounded-xs border-[1px] border-dark appearance-none focus:outline-none focus:ring-0 focus:border-red;
+  }
+
+  .input-outlined:not(:last-child) {
+    @apply mb-[40px];
+  }
+
+  .label-outlined {
+    @apply absolute text-sm text-dark duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 left-1;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-poppins text-dark;
+  }
+}

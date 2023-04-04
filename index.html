@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="public/css/output.css" />
+    <title>Job Finder</title>
+  </head>
+  <body>
+    <nav class="bg-gray-light w-full">
+      <ul
+        class="list-none overflow-hidden mx-tema flex items-center justify-between h-[80px]"
+      >
+        <li>
+          <a href="#" class="text-[2rem]">Job Finder</a>
+        </li>
+        <li>
+          <a href="#">Ver vagas</a>
+          <a href="#" class="bg-red text-white">Abrir vagas</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="principal">
+      <section class="flex items-center justify-center">
+        <img
+          src="public/resources/illustration.svg"
+          alt="Ilustração de pessoa buscando emprego"
+          class="max-w[620px] max-h-[462px]"
+        />
+      </section>
+
+      <section class="flex items-center justify-center flex-wrap">
+        <header>
+          <h1 class="text-2xl text-center">
+            Encontre o emprego dos seus sonhos
+          </h1>
+          <h2 class="text-lg text-center">
+            Encontre vagas que combinem com suas habilidades, competências e
+            objetivos profissionais
+          </h2>
+        </header>
+        <form action="" id="search-form" class="w-full">
+          <label for="job"
+            ><input
+              type="text"
+              name="job"
+              id="job"
+              placeholder="Digite a vaga que está procurando"
+              class="w-[75%] h-[50px] bg-gray-light indent-[10px]"
+          /></label>
+          <button type="submit" class="w-[20%] h-[50px] bg-red text-white">
+            Buscar
+          </button>
+        </form>
+      </section>
+    </main>
+    <main id="jobs-list" class="min-h-screen relative mx-tema">
+      <header>
+        <h2 class="text-2xl my-[30px]">Veja as vagas já cadastradas</h2>
+      </header>
+
+      <article>
+        <section class="ml-[25px] flex items-center">
+          <img
+            src="public/resources/company-logo.png"
+            alt="Logo padrão de uma empresa"
+            class="mr-[40px] max-h[140px] max-h-[152px]"
+          />
+          <div>
+            <p class="text-base">Empresa</p>
+            <h2 class="text-xl">Título da vaga</h2>
+            <p class="text-base">R$ 1000,00</p>
+          </div>
+        </section>
+        <a href="#" class="px-[38px] py-[17px] text-white bg-red mr-[40px]"
+          >Conferir
+        </a>
+      </article>
+
+      <article class="new-job">
+        <section class="ml-[25px] flex items-center">
+          <img
+            src="public/resources/company-logo.png"
+            alt="Logo padrão de uma empresa"
+            class="mr-[40px] max-h[140px] max-h-[152px]"
+          />
+          <div>
+            <p class="text-base">Empresa</p>
+            <h2 class="text-xl">Título da vaga</h2>
+            <p class="text-base">R$ 1000,00</p>
+          </div>
+        </section>
+        <p class="new-badge">Nova</p>
+        <a href="#" class="px-[38px] py-[17px] text-white bg-red mr-[40px]"
+          >Conferir</a
+        >
+      </article>
+    </main>
+    <footer
+      class="bg-gray-light h-[70px] w-full bottom-[0px] flex items-center"
+    >
+      <p class="ml-tema mr-[5px]">Site desenvolvido por</p>
+      <a href="https://github.com/Mentor404" class="underline">/Mentor404</a>
+    </footer>
+    <button onclick="topFunction()" id="top-button" class="hidden">
+      <img
+        src="public/resources/icon-up.svg"
+        class="w-[18px] h-[18px]"
+        alt="botão para ir ao topo da página"
+      />
+    </button>
+
+    <script src="public/js/interactive.js"></script>
+  </body>
+</html>
