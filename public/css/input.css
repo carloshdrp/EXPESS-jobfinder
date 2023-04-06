@@ -14,7 +14,7 @@
   }
 
   #top-button {
-    @apply fixed bottom-[60px] right-[60px] z-50 border-none outline-none bg-red cursor-pointer p-[15px] w-[50px] h-[50px] rounded-[100px];
+    @apply fixed bottom-[60px] right-[60px] z-50 border-white border-solid border-2 outline-none bg-red cursor-pointer p-[15px] w-[50px] h-[50px] rounded-[100px];
   }
 
   article {
@@ -39,6 +39,10 @@
 
   .label-outlined {
     @apply absolute text-sm text-dark duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 left-1;
+  }
+
+  .error-container {
+    @apply flex p-4 mb-4 text-sm text-red rounded-xs bg-red bg-opacity-25;
   }
 }
 

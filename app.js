@@ -32,8 +32,8 @@ app.get("/", async (req, res) => {
       where: {
         title: {
           contains: search,
-          mode: 'insensitive',
-        }
+          mode: "insensitive",
+        },
       },
       orderBy: {
         title: "asc",

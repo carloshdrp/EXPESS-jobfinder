@@ -1,0 +1,15 @@
+<main class="mx-tema min-h-[calc(100vh-150px)]">
+    <header class="flex justify-between mt-[60px]">
+        <h1 class="text-2xl text-red">{{job.title}}</h1>
+        <img src="/resources/company-logo.png" alt="Logo de uma empresa">
+    </header>
+    <h2 class="mt-[15px] mb-[5px] text-lg"><b>Descrição da vaga</b></h2>
+    <p class="max-h-[225px] max-w-[800px] overflow-auto">
+        {{job.description}}
+    </p>
+    <h2 class="mt-[15px] mb-[5px] text-lg"><b>Salário</b></h2>
+    <p>R$ {{job.salary}}</p>
+    <h2 class="mt-[15px] mb-[5px] text-lg"><b>Contato</b></h2>
+    <p>Para candidatar-se à vaga na empresa {{job.company}},</p>
+    <p>Envie seu currículo para <a class="text-red underline" href="mailto:{{job.email}}">{{job.email}}</a> com o assunto: “{{job.title}}”.</p>
+</main>
