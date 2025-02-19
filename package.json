@@ -8,7 +8,7 @@
     "dev": "nodemon app.js",
     "tailind": "npx tailwindcss -i public/css/input.css -o public/css/output.css --watch"
   },
-  "author": "mentor404",
+  "author": "carloshdrp",
   "license": "MIT",
   "devDependencies": {
     "@prisma/client": "^4.12.0",
